@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-21 12:43+0200\n"
+"POT-Creation-Date: 2018-10-21 12:55+0200\n"
 "PO-Revision-Date: 2018-10-21 12:30+0200\n"
 "Last-Translator: Leon Alef <leon@alef.one>\n"
 "Language-Team: german <netzwerkwart@goebenstift.de>\n"
@@ -46,21 +46,33 @@ msgstr "Datum des Einzugs entsprechend Mietvertrag"
 msgid "Date of move-out"
 msgstr "Auszugsdatum"
 
-#: models.py:19
+#: models.py:19 models.py:25
+msgid "Resident"
+msgstr "Mieter*in"
+
+#: models.py:20
+msgid "Residents"
+msgstr "Mieter*innen"
+
+#: models.py:23
 msgid "Room code"
 msgstr "Zimmer-Code"
 
-#: models.py:19
+#: models.py:23
 msgid "Room code like \"HH32\""
 msgstr "Zimmer-Code wie \"HH32\""
 
-#: models.py:20
+#: models.py:24
 msgid "Rent"
 msgstr "Miete"
 
-#: models.py:21
-msgid "Resident"
-msgstr "Mieter*in"
+#: models.py:31
+msgid "Room"
+msgstr "Zimmer"
+
+#: models.py:32
+msgid "Rooms"
+msgstr "Zimmer"
 
 #: views.py:10
 msgid "Hello, Goebenstift!"

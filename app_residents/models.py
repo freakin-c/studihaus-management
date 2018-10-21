@@ -15,6 +15,10 @@ class Resident(models.Model):
     def __str__(self):
         return self.forename
 
+    class Meta:
+        verbose_name = _('Resident')
+        verbose_name_plural = _('Residents')
+
 class Room(models.Model):
     room_code = models.CharField(_('Room code'), help_text=_('Room code like "HH32"'), max_length=4, unique=True)
     rent = models.DecimalField(_('Rent'), max_digits=5, decimal_places=2)
@@ -23,3 +27,6 @@ class Room(models.Model):
     def __str__(self):
         return self.room_code + (f' ({self.resident})' if self.resident else '')
 
+    class Meta:
+        verbose_name = _('Room')
+        verbose_name_plural = _('Rooms')
