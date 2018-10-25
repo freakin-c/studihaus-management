@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+        <link rel="stylesheet" href="{% static 'card-list.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="resident-container">
+    {% for resident in residents %}
+    <a class="resident-url" href="#">
+        <div class="resident-card">
+            <div class="resident-card-head">
+                {% if resident.image %}
+                    <img class="resident-thumb" src="{{ resident.image }}">
+                {% else %}
+                    {# static 'images/human.png' #}
+                {% endif %}
+            </div>
+            <div class="resident-card-detail">
+                <h3 class="resident-title">{{ resident.forename }}</h3>
+                <p class="resident-description">{{ resident.email }}</p>
+                <p class="resident-source">{{ resident.room.room_code }}</p>
+            </div>
+        </div>
+    </a>
+    {% endfor %}
+</div>
+<div class="base-layer"/>
+
+{% endblock content %}

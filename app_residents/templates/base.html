@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang='de'>
+    <head>
+        <meta charset="UTF-8">
+        <title>StudiHaus Management</title>
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+        {% block head %}
+        {% endblock head %}
+    </head>
+    <body class="wide">
+        <div id="page">
+            <header>
+                <div class="head-wrap inner-wrap">
+                    <div id="header-logo"></div>
+                    <div id="header-text">
+                        <h1><a class="headline" href="{% url 'index' %}">StudiHaus Management</a></h1>
+                    </div>
+                </div>
+            </header>
+
+            <div class="main-wrap">
+                <div class="inner-wrap">
+                    {% block content %}
+                    {% endblock content %}
+                </div>
+            </div>
+
+            <footer id="colophon">
+                <div class="inner-wrap">
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
