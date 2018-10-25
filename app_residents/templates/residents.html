@@ -9,18 +9,18 @@
 <div class="resident-container">
     {% for resident in residents %}
     <a class="resident-url" href="#">
-        <div class="resident-card">
-            <div class="resident-card-head">
+        <div class="card">
+            <div class="card-head">
                 {% if resident.image %}
                     <img class="resident-thumb" src="{{ resident.image }}">
                 {% else %}
                     {# static 'images/human.png' #}
                 {% endif %}
             </div>
-            <div class="resident-card-detail">
-                <h3 class="resident-title">{{ resident.forename }}</h3>
-                <p class="resident-description">{{ resident.email }}</p>
-                <p class="resident-source">{{ resident.room.room_code }}</p>
+            <div class="card-detail">
+                <h3 class="card-title">{{ resident.forename }}</h3>
+                <p class="card-description">{{ resident.email }}</p>
+                <p class="card-hint">{{ resident.room.room_code }}</p>
             </div>
         </div>
     </a>
