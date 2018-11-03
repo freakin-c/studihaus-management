@@ -12,3 +12,7 @@ def index(request):
 def residents(request):
     residents = Resident.objects.filter(date_move_out=None)
     return render(request, 'residents.html', {'residents': residents})
+
+def resident(request, pk):
+    resident = Resident.objects.get(pk=pk)
+    return render(request, 'resident.html', {'resident': resident})

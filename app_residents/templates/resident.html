@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="resident-container">
+    <a class="resident-url" href="#">
+        <div class="card">
+            <div class="card-head">
+                {% if resident.image %}
+                    <img class="resident-thumb" src="{{ resident.image }}">
+                {% else %}
+                    {# static 'images/human.png' #}
+                {% endif %}
+            </div>
+        </div>
+    </a>
+    <div>
+        <h1>{{ resident.forename }} {{ resident.surname }}</h1>
+        <p>{{ resident.date_move_in }}{% if resident.date_move_out %} - {{ resident.date_move_out }}{% endif %}</p>
+    </div>
+</div>
+<div class="base-layer"/>
+
+{% endblock content %}

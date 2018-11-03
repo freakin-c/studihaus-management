@@ -8,7 +8,7 @@
 {% block content %}
 <div class="resident-container">
     {% for resident in residents %}
-    <a class="resident-url" href="#">
+    <a class="resident-url" href="{% url 'resident' resident.pk %}">
         <div class="card">
             <div class="card-head">
                 {% if resident.image %}
