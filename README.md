@@ -8,8 +8,10 @@ It allows setting up the rooms and associating them with the residents.
 **Prepare project**
 
 ```{bash}
-# install mariadb with your favourite package manager
+# install mariadb server with your favourite package manager
+# and start the service with your systems init system or others
 pacman -S mariadb
+systemctl start mariadb.service
 
 # install python dependencies inside of virtual environment
 python -m venv studihaus-venv
