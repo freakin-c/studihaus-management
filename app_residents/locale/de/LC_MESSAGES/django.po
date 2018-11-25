@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-21 12:55+0200\n"
+"POT-Creation-Date: 2018-11-25 18:07+0100\n"
 "PO-Revision-Date: 2018-10-21 12:30+0200\n"
 "Last-Translator: Leon Alef <leon@alef.one>\n"
 "Language-Team: german <netzwerkwart@goebenstift.de>\n"
@@ -18,62 +18,70 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: models.py:8
+#: app_residents/models.py:8
 msgid "Forename"
 msgstr "Vorname"
 
-#: models.py:9
+#: app_residents/models.py:9
 msgid "Surname"
 msgstr "Nachname"
 
-#: models.py:10
+#: app_residents/models.py:10
 msgid "E-Mail"
 msgstr ""
 
-#: models.py:11
+#: app_residents/models.py:11
 msgid "Mobile number"
 msgstr "Mobiltelefon"
 
-#: models.py:12
+#: app_residents/models.py:12
 msgid "Date of move-in"
 msgstr "Einzugsdatum"
 
-#: models.py:12
+#: app_residents/models.py:12
 msgid "Date of move-in like stated on rental agreement"
 msgstr "Datum des Einzugs entsprechend Mietvertrag"
 
-#: models.py:13
+#: app_residents/models.py:13
 msgid "Date of move-out"
 msgstr "Auszugsdatum"
 
-#: models.py:19 models.py:25
+#: app_residents/models.py:19 app_residents/models.py:25
 msgid "Resident"
 msgstr "Mieter*in"
 
-#: models.py:20
+#: app_residents/models.py:20
 msgid "Residents"
 msgstr "Mieter*innen"
 
-#: models.py:23
+#: app_residents/models.py:23
 msgid "Room code"
 msgstr "Zimmer-Code"
 
-#: models.py:23
+#: app_residents/models.py:23
 msgid "Room code like \"HH32\""
 msgstr "Zimmer-Code wie \"HH32\""
 
-#: models.py:24
+#: app_residents/models.py:24
 msgid "Rent"
 msgstr "Miete"
 
-#: models.py:31
+#: app_residents/models.py:31
 msgid "Room"
 msgstr "Zimmer"
 
-#: models.py:32
+#: app_residents/models.py:32
 msgid "Rooms"
 msgstr "Zimmer"
 
-#: views.py:10
+#: app_residents/models.py:37
+msgid "Tenancy"
+msgstr "Mietverhältnis"
+
+#: app_residents/models.py:38
+msgid "Tenancies"
+msgstr "Mietverhältnisse"
+
+#: app_residents/views.py:10
 msgid "Hello, Goebenstift!"
 msgstr "Hallo, Goebenstift!"
