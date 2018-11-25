@@ -13,9 +13,15 @@ It allows setting up the rooms and associating them with the residents.
 pacman -S mariadb
 systemctl start mariadb.service
 
-# set up virtual envirionment and install python dependencies inside
+# clone repository
 git clone https://github.com/freakin-c/studihaus-management.git
 
+# prepare database
+# choose a strong password for the db user 'django'
+# and update the SQL statement inside of db_setup.sql
+mysql -u root < studihaus-management/db_setup.sql
+
+# set up virtual environment and install python dependencies inside
 python -m venv studihaus-venv
 source studihaus-venv/bin/activate
 pip install -r studihaus-management/requirements.txt
