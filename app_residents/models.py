@@ -30,3 +30,10 @@ class Room(models.Model):
     class Meta:
         verbose_name = _('Room')
         verbose_name_plural = _('Rooms')
+
+class Tenancy(models.Model):
+
+    class Meta:
+        verbose_name = _('Tenancy')
+        verbose_name_plural = _('Tenancies')
+
