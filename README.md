@@ -8,6 +8,10 @@ It allows setting up the rooms and associating them with the residents.
 **Prepare project**
 
 ```{bash}
+# install mariadb with your favourite package manager
+pacman -S mariadb
+
+# install python dependencies inside of virtual environment
 python -m venv studihaus-venv
 source studihaus-venv/bin/activate
 pip install mysqlclient django
